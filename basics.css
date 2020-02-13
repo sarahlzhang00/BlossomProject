@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #Fedee1;
+  color: #f7858d;
+}
+.header1 {
+  background-color: #Fedee1;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  background-image: url(Blossom.png);
+  background-position-x: 10px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+}
+
+/* Style the header */
+.header2 {
+  background-color: #Fedee1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  text-align:center;
+  font-weight: bolder;
+  background-color: #Fedee1;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #Fedee1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.button {
+  border-radius: 8px;
+  background-color:white;
+  color: #f7858d;
+  border: 2px solid #Fedee1;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin: 8px 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-style: oblique;
+  font-weight: lighter;
+}
+.button:hover{
+    background-color:#f7858d;
+    border:3px solid #Fedee1;
+    color:white;
+}
+
+.button1 {
+  border-radius: 8px;
+  background-color:#f7858d;
+  color: white;
+  border: 2px solid #Fedee1;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin: 8px 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-style: oblique;
+  font-weight: lighter;
+}
+.button1:hover{
+    background-color:white;
+    border:3px solid #f7858d;
+    color:#f7858d;
+}
+.buttonT {
+  background-color: #Fedee1;
+  color: #f7858d;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  float: right;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  
+}
+.buttonT:hover{
+  background-color:white;
+  border:3px solid #Fedee1;
+  color:#f7858d;
+}
+.disabled {
+  background-color: white;
+  cursor: not-allowed;
+}

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  body {
+    background-color: #Fedee1;
+    color: #f7858d;
+      background-image: url("flowers.png");
+      background-color: #Fedee1;
+      background-size: 600px;
+      background-position-y: 100px;
+      background-position-x: 850px;
+      background-repeat: no-repeat;
+  }
+  .header1 {
+    background-color: #Fedee1;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    background-image: url(Blossom.png);
+    background-position-x: 10px;
+    background-size: 120px;
+    background-repeat: no-repeat;
+  }
+  .button {
+    background-color: #Fedee1;
+    color: #f7858d;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+  }
+  .button:hover{
+    background-color:white;
+    border:3px solid #Fedee1;
+    color:#f7858d;
+  }
+  
+  #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  h1 {
+    text-align: center;  
+    font-weight: bold;
+    color: #f7858d;
+    font-size: 50px;
+    padding: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #f7858d;
+    color: #f7858d
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+
+  #tab {
+    color: #f7858d;
+    border-radius: 4px;
+  }
+  
+  input[type = radio] {
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  button {
+    background-color: #f7858d;
+    color: #ffdddd;
+    border-radius: 8px;
+    border: 20px #ffffff;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #f7858d;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffdddd;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 0.75;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #ff656f;
+  }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Stats</title>
+    <link rel="stylesheet" href="utilities.css">
+</head>
+<div class="header1">
+  <head>
+     <title>Financial Basics</title>
+  </head>
+  <body>
+     <a href="basics.html" class="button">Money Management</a>
+  </body>
+  <head>
+     <title>My Stats</title>
+  </head>
+  <body>
+     <a href="utilities.html" class="button">Your Stats</a>
+  </body>
+  <head>
+     <title>About Us</title>
+  </head>
+  <body>
+     <a href="about.html" class="button">About Us</a>
+  </body>
+</div>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<form id="regForm" action="results.html">
+  <h1>Future Finances Questionnaire:</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">In how many years will you start working?:
+    <input placeholder="Years" type="number" name="years" id="years" step="1">
+    <!--
+        <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+    -->
+  </div>
+
+  <div class="tab">Are you currently financially dependent on anyone?
+    <input type="radio" name="dependency" value="yes"> Yes<br>
+    <input type="radio" name="dependency" value="no"> No<br>
+  </div>
+
+  <div class="tab">What is your intended future job?
+    <!--<label for="cars">Choose a cell phone company: </label>-->
+    <select id="tab">
+    <option value="SWE">Software Engineering</option>
+    <option value="DS">Data Scientist</option>
+    <option value="FE">Front-End Developer</option>
+    </select>
+    <!--
+        <p><input placeholder="Job" type="text" name="job"></p>
+        <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+        <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+    -->
+  </div>
+  
+  <div class="tab">Where will you work?
+    <select id="tab">
+        <option value="austin">Austin, TX</option>
+        <option value="san francisco">San Francisco, CA</option>
+        <option value="nyc">New York City, NY</option>
+        </select>    <!--
+        <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+        <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+        <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+    -->
+  </div>
+
+  <div class="tab">What will be your main form of transportation?
+    <select id="tab">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+    </select>
+    <!-- 
+        <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+        <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+    -->
+  </div>
+
+  <!--
+    <div class="tab">How many days of the week will you cook?
+        <p><input placeholder="Cooking" type="number" name="cook"></p>
+    
+    <div>How many days of the week will you eat out?
+        <p><input placeholder="Eating Out" type="number" name="eating out"></p>
+    </div>
+    </div>
+
+  <div class="tab">What entertainment do you want to have?
+    <p><input type="checkbox" name="video" value="video">
+        <label for="video"> Video Subscription (Netflix, Disney+, etc.)</label><br></p>
+    <p><input type="checkbox" name="music" value="music">
+        <label for="music"> Music Subscription (Spotify, Apple Music, etc.)</label><br></p>
+    <p><input type="checkbox" name="gym" value="gym">
+        <label for="gym"> Gym Membership </label><br></p>
+  </div>
+
+  <div class="tab">What type of insurance will you have?
+    <p><input type="checkbox" name="car" value="car">
+        <label for="car"> Car Insurance</label><br></p>
+    <p><input type="checkbox" name="health" value="health">
+        <label for="health"> Health Insurance</label><br></p>
+    <p><input type="checkbox" name="life" value="life">
+        <label for="life"> Life Insurance </label><br></p>
+    <p><input type="checkbox" name="dental" value="dental">
+        <label for="dental"> Dental Insurance </label><br></p>
+  </div>
+
+  <div class="tab">What does your personal spending look like?
+    <div>How much money will you spend on clothing per month? 
+        <input placeholder="Clothing Per Month" type="number" name="clothing" id="clothing">
+    </div>
+    <div>How much money will you spend on gifts per month? 
+        <input placeholder="Gifts Per Month" type="number" name="gifts" id="gifts">
+    </div>
+    <div>How much money will you spend on the salon per month? 
+        <input placeholder="Salon Per Month" type="number" name="salon" id="salon">
+    </div>
+  </div>
+
+  <div class="tab">What are your financial obligations?
+    <div>What percentage of your wages will you save long-term (after taxes)? 
+        <input placeholder="Long-term Savings" type="number" name="long-term" id="long-term">
+    </div>
+    <div>What percentage of your wages will you save short-term (after taxes)? 
+        <input placeholder="Short-term savings" type="number" name="short-term" id="short-term">
+    </div>
+    <div>What percentage of your wages will you save for retirement (after taxes)? 
+        <input placeholder="Retirment Savings" type="number" name="retirment" id="retirement">
+    </div>
+  </div>
+
+  <div class="tab">How much would you owe in school loans?
+      <input placeholder="School Loans" type="number" name="school loans" id="school loans">
+  </div> -->
+<!--
+      <div>
+    <div class="tab">What cell phone plan will you have?
+        <label for="cars">Choose a cell phone company: </label>
+        <select id="company">
+        <option value="verizon">Verizon</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+        </select>
+    </div>
+  </div>
+-->
+
+
+  <!--
+        <div class="tab">How many days of the week will you cook?
+    <p><input placeholder="Cooking" type="number" name="cook"></p>
+    <div class="tab">How many days of the week will you eat out?
+        <p><input placeholder="Eating Out" type="number" name="cook"></p>
+      </div>
+  </div>
+  -->
+
+
+  
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script src="utilities.js"></script>
+
+</body>
+</html>
